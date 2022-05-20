@@ -1,0 +1,116 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{width: 50%;}
+    </style>
+</head>
+<body>
+    
+    <h1>Formulário</h1>
+
+    <form method="POST">
+        <div>
+        <fieldset>
+
+            <legend>Dados Pessoais</legend>
+        <label for="id_nome">NOME:</label>
+        <input type="text"
+               nome="nome"
+               placeholder="Digite seu nome"
+               id="id_nome">
+               <br>
+               <label for="id_Data">Data de Nascimento:</label>
+               
+               <input type="date"
+               nome="Data"
+               placeholder="dd/mm/aaaa"
+               id="id_Data">
+               <br>
+               <label for="id_gmail">Gmail</label>
+               <input type="text"
+               nome="gmail"
+               placeholder="Gmail/E-mail"
+               id="id_Gmail">
+
+               <br>
+               <label for="id_Telefone">Telefone::</label>
+               
+               <input type="tel" name="Telefone"
+               id="id_Telefone"
+               placeholder="ex:(61)####-####">
+        </fieldset>
+        
+<br>
+<fieldset>
+    <legend>Dados Academicos</legend>
+    <label for="id_curso">Curso</label>
+               <select name="opções">
+                  
+                   <option value="10">ADS</option>
+                   <option value="20">GTI</option>
+               </select>
+               <!--SE utilisa value pra definir o valor que sera enviado ao servidor para cada uma das opções apresentadas-->
+               <br>
+               <input type="radio"
+               name="semestre"
+               value="1"
+               id="id_1">
+               <label for="id_1">1º</label>
+               <input type="radio"
+               name="semestre"
+               value="2"
+               id="id_2">
+               <label for="id_2">2º</label>
+               <input type="radio"
+               name="semestre"
+               value="3"
+               id="id_3">
+               <label for="id_3">3º</label>
+               <input type="radio"
+               name="semestre"
+               value="4"
+               id="id_4">
+               <label for="id_4">4º</label>
+               <input type="radio"
+               name="semestre"
+               value="5"
+               id="id_5">
+
+               <label for="id_5">5º</label>
+            </fieldset>
+            <fieldset>
+<label for="id_trabalho">Trabalha?</label>
+               <input type="checkbox"
+               name="trabalho"
+               value="1"
+               id="id_trabalho">
+               <br>
+               <label for="id_local">Local de trabalho</label>
+               <input type="text"
+               name="local de trabalho"
+               id="id_local">
+               <br>
+               <label for="id_experiencia">Descreva a experiencia</label>
+               <br>
+               <textarea rows="5"
+               cols="90"
+               name="experiencia"
+               id="id_experiencia"></textarea>
+            </div>
+                   
+               
+
+
+<br>
+               <input type="submit" value="enviar">
+    </form>
+</fieldset>
+    
+</body>
+</html>
