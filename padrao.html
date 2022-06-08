@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="peso">digite o peso: </label>
+        <input type="number" id="peso" nome="peso">
+        <br>
+        <label for="altura">digite a altura: </label>
+        <input type="number" id="altura" nome="altura">
+        
+    </form>
+    <button onclick="calcularmedia();">
+        Calcular IMC
+        </button>
+
+    <p>IMC:
+        <span id="med">
+        </span>
+        </p>
+    <p>situaçao:
+        <span id="sit">
+        </span>
+    </p>
+    <br>
+    
+    <script>
+        function calcularmedia(){
+            let p1 = (document.getElementById("peso").value);
+            let a2 = (document.getElementById("altura").value);
+            
+            let imc = ( p1 / (a2 * a2));
+            const media = imc.toFixed(2);
+            
+            document.getElementById("med").innerHTML = media;
+            let situaçao =""
+            if(media <= 20 ) {
+                 situaçao ="abaixo do peso";
+            } if (media >= 20 && media <= 25){
+                 situaçao ="normal"
+            } if (media > 25 && media <= 30){
+                 situaçao ="Sobrepeso"
+            } if (media > 30 && media <= 35){
+                 situaçao ="obesidade 1" 
+            } if (media > 35 && media <= 40){
+                 situaçao ="obesidade 2"
+            } if (media > 40){
+                 situaçao ="obesidade 3;"
+            }  
+            document.getElementById("sit").innerHTML = situaçao;
+            
+            }
+        
+    </script>
+</body>
+</html>
